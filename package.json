@@ -34,5 +34,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasgabrielba/cozastore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasgabrielba/cozastore/issues"
+  },
+  "homepage": "https://github.com/lucasgabrielba/cozastore#readme",
   "description": ""
 }
