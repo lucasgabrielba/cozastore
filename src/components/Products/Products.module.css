@@ -1,0 +1,93 @@
+.products h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    padding: 15px;
+}
+
+.list_and_buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    width: 90px;
+    height: 40px;
+    border: 2px solid rgb(202, 202, 202);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.filter {
+    display: flex;
+    align-items: space-between;
+}
+
+.filter {
+    position: relative;
+    top: 5px;
+}
+
+.find {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons a {
+    color: rgb(77, 77, 77);
+    font-size: .9rem;
+    position: relative;
+    bottom: 1px;
+}
+
+.buttons svg {
+    position: relative;
+    top: 1px;
+}
+
+.buttons a:hover {
+    color: blueviolet;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.list li {
+    font-size: 1.1em;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+.list a {
+    color: black;
+}
+
+.list a:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+@media (max-width: 999px) {
+    .list_and_buttons {
+        justify-content: space-around;
+    }
+
+    .products h1 {
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        position: relative;
+        top: 6px;
+        right: 130px;
+    }
+
+}

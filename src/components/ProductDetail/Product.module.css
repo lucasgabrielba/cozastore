@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    margin: 10vw;
+}
+
+.info_products {
+    margin-left: 50px;
+}
+
+.image img {
+    width: 35vw;
+}
+
+h5 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.description {
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+label {
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+
+.addcart {
+    width: 350px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 30px 0 0 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.sizes {
+    display: flex;
+}
+
+.sizes input {
+    cursor: pointer;
+    appearance: none;
+    width: 50px;
+    height: 40px;
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    margin-bottom: 20px;
+    background-color: rgb(201, 201, 201);
+    cursor: pointer;
+}
+
+.sizes input:before {
+    content: '';
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    background-color: rgba(61, 61, 61, 0.55);
+    border-radius: 5px;
+
+}
+
+.sizes input:checked:before {
+    opacity: 1;
+}
+
+.sizes input:focus {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.sizes label {
+    font-size: 1.3em;
+    position: relative;
+    top: 8px;
+    left: 32px;
+    cursor: pointer;
+}
+
+.btnColor {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin-left: 20px;
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+
+
+@media (max-width: 999px) {
+    .product {
+        display: block;
+        margin: 5vw;
+    }
+
+    .image img {
+        width: 40vh;
+        margin-top: 70px;
+        margin-left: 10px;
+    }
+
+    .info_products {
+        margin-left: 0;
+    }
+
+    h5,
+    h3,
+    h2,
+    .price,
+    .description,
+    .addcart {
+        margin-left: 10px;
+    }
+}

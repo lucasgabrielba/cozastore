@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.container-checkout {
+    height: 100vh;
+    background: url('./modelo1.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 70px;
+}
+
+.container-glass {
+  width: 100vw;
+  height: 100vh;
+
+  overflow-y: auto;
+
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-checkout form {
+
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    overflow-y: auto;
+
+    border-radius: 8px;
+}
+
+.container-checkout form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container-checkout form .row .col {
+    flex: 1 1 250px;
+}
+
+.container-checkout form .row .col .title {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.container-checkout form .row .col .inputBox {
+    margin: 15px 0;
+}
+
+.container-checkout form .row .col .inputBox span {
+    margin: 5px;
+    display: block;
+}
+
+.container-checkout form .row .col .inputBox input {
+    width: 100%;
+    border: 1px solid #CCC;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container-checkout form .row .col .inputBox input:focus {
+    border: 1px solid #000
+}
+
+.container-checkout form .row .col .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.container-checkout form .row .col .flex .inputBox {
+    margin-top: 5px;
+
+}
+
+.container-checkout form .row .col .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px rgb(#000));
+}
+
+.container-checkout form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.01rem;
+    background: #27ae60;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.container-checkout form .submit-btn:hover {
+    background: #2ecc71;
+}
+
+.link-buy {
+  width: 100%;
+  text-align: center;
+  margin: 25px 0;
+  text-decoration: none;
+  color: blue;
+}
+
+@media only screen and (max-width: 500px) {
+  .container-checkout form {
+    margin-top: 200px;
+  }
+}

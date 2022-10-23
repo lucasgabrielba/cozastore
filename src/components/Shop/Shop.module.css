@@ -1,0 +1,28 @@
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    /* background: blueviolet; */
+}
+
+.load_more {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.load_more button {
+    width: 150px;
+    height: 50px;
+    background: rgb(227, 227, 227);
+    border: none;
+    border-radius: 50px;
+    margin: 50px 0;
+    box-shadow: 0px 3px -5px rgba(0, 0, 0, 0.055);
+}
+
+.load_more a {
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+}

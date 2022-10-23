@@ -1,0 +1,54 @@
+.shop {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.product {
+    margin: 15px;
+    display: block;
+}
+
+
+.product img {
+    width: 350px;
+    margin-bottom: 5px;
+}
+
+
+.product a {
+    display: block;
+    color: rgb(119, 119, 119);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.product p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(66, 66, 66);
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.addCart {
+    position: relative;
+    top: 65px;
+    left: 255px;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.addCart svg {
+    font-size: 2em;
+    color: rgb(118, 118, 118);
+    cursor: pointer;
+}
+
+.addCart:hover svg {
+    color: rgb(84, 34, 130);
+}
