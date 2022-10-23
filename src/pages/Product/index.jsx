@@ -24,7 +24,7 @@ export const ProductDetail = () => {
       .catch((err) => console.log(err));
 
     axios
-      .get(`https://rest-api-cozastore.herokuapp.com${pathnameURL}s?size=P`)
+      .get(`https://rest-api-cozastore.herokuapp.com${pathnameURL}s`)
       .then((response) => {
         setColors(response.data.map((prod) => prod.color));
         console.log(colors);
