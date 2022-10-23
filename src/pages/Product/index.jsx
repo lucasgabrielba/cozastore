@@ -16,7 +16,7 @@ export const ProductDetail = () => {
   useEffect(() => {
     axios
       .get(
-        `https://my-simple-ecommerce-api.herokuapp.com${pathnameURL}p?color=${colorName}`
+        `https://rest-api-cozastore.herokuapp.com${pathnameURL}p?color=${colorName}`
       )
       .then((response) => {
         setProduct(response.data[0]);
@@ -24,9 +24,7 @@ export const ProductDetail = () => {
       .catch((err) => console.log(err));
 
     axios
-      .get(
-        `https://my-simple-ecommerce-api.herokuapp.com${pathnameURL}s?size=P`
-      )
+      .get(`https://rest-api-cozastore.herokuapp.com${pathnameURL}s?size=P`)
       .then((response) => {
         setColors(response.data.map((prod) => prod.color));
         console.log(colors);
