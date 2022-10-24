@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { getProdutsByPilot } from "../../redux/fetchActions";
 
-import ProductCard from "../Product/ProductCard";
+import ProductCard from "../ProductCard/ProductCard";
 import styles from "./Shop.module.css";
 
 function Shop() {
