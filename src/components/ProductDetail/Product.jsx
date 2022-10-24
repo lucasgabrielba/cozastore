@@ -16,12 +16,11 @@ function Product({
   const dispatch = useDispatch();
 
   const handleOpenSidebar = () => {
-    document.querySelector('#sidebar').classList.remove('sidebar--isHidden')
-  
-  }
+    document.querySelector("#sidebar").classList.remove("sidebar--isHidden");
+  };
 
   const addItemInCart = () => {
-    handleOpenSidebar()
+    handleOpenSidebar();
     dispatch(
       addToCart({
         id,
@@ -29,8 +28,8 @@ function Product({
         image,
         price,
       })
-    )
-  }
+    );
+  };
 
   return (
     <div className={styles.product}>
@@ -54,14 +53,14 @@ function Product({
           </div>
           <h3>Colors</h3>
           {colors.map((color) => (
-            <a href={`/products/${slug}/?color=${color}`} key={color}>
+            <a
+              href={`/products/${slug}/?color=${color}&category=${category}`}
+              key={color}
+            >
               <button className={`${styles.btnColor} ${color}`}>&nbsp;</button>
             </a>
           ))}
-          <button
-            className={styles.addcart}
-            onClick={addItemInCart}
-          >
+          <button className={styles.addcart} onClick={addItemInCart}>
             Adicionar ao carrinho
           </button>
         </section>

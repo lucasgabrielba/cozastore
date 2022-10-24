@@ -2,17 +2,18 @@ import { Navbar } from "../../components/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Product from "../../components/ProductDetail/Product";
 
-import styles from "./index.module.css";
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { randomNum } from "./Calc";
-import ProductCard from "../../components/Product/ProductCard";
+import Indications from "../../components/Indications";
+
+import styles from "./index.module.css";
 
 export const ProductDetail = () => {
   const urlParam = new URLSearchParams(window.location.search);
   const pathnameURL = document.location.pathname;
   const colorName = urlParam.get("color");
+  const categoryName = urlParam.get("category");
 
   const [product, setProduct] = useState([]);
   const [colors, setColors] = useState([]);
@@ -42,12 +43,13 @@ export const ProductDetail = () => {
   useEffect(() => {
     axios
       .get(
-        `https://rest-api-cozastore.herokuapp.com/products/category/${product.category}`
+        `https://rest-api-cozastore.herokuapp.com/products/category/${categoryName}`
       )
       .then((response) => {
         const finalNumber = response.data.length - 5;
         const randomNumber = randomNum(0, finalNumber);
         setIndications(response.data.slice(randomNumber, randomNumber + 5));
+        console.log(response.data);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -65,11 +67,9 @@ export const ProductDetail = () => {
         image={product.image}
         id={product.id}
       />
-
-      <div className={styles.shop}>
-        {indications?.map((product) => (
-          <ProductCard key={product.id} productInfo={product} />
-        ))}
+      <div className={styles.indications}>
+        <h3>Você também pode gostar:</h3>
+        <Indications indications={indications} />
       </div>
       <Footer />
     </>

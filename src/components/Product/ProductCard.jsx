@@ -31,7 +31,7 @@ export default function ProductCard({ productInfo }) {
           <FaCartPlus />
         </button>
         <a
-          href={`https://cozastoree.netlify.app/products/${product.slug}/?color=${product.color}`}
+          href={`http://127.0.0.1:5173/products/${product.slug}/?color=${product.color}&category=${product.category}`}
         >
           <img src={product.image} alt={product.product} />
           <p>{product.product}</p>
