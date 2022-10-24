@@ -15,6 +15,7 @@
 }
 
 .image img {
+    text-align: center;
     width: 35vw;
 }
 
@@ -54,7 +55,8 @@ label {
 
 
 .addcart {
-    width: 350px;
+    text-align: center;
+    width: 20em;
     height: 60px;
     border: none;
     border-radius: 10px;

@@ -6,13 +6,13 @@
 }
 
 .product {
-    margin: 15px;
+    margin: 3em;
     display: block;
 }
 
 
 .product img {
-    width: 350px;
+    width: 18em;
     margin-bottom: 5px;
 }
 
