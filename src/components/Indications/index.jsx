@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import ProductCard from "../Product/ProductCard";
+import ProductCard from "../ProductCard/ProductCard";
 
 export default function Indications({ indications }) {
   return (

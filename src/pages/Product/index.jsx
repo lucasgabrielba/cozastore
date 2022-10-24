@@ -4,7 +4,7 @@ import Product from "../../components/ProductDetail/Product";
 
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { randomNum } from "./Calc";
+import { randomNum } from "./RandomNum";
 import Indications from "../../components/Indications";
 
 import styles from "./index.module.css";
